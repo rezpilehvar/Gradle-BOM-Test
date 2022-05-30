@@ -1,0 +1,21 @@
+plugins {
+    id 'maven-publish' apply true
+    id 'java-platform' apply true
+}
+
+dependencies {
+    constraints {
+        api 'com.google.code.gson:gson:2.8.9'
+        api 'ir.irezaa.bom-test:module-1:1.0-SNAPSHOT'
+    }
+}
+
+publishing {
+    publications {
+        bom(MavenPublication) {
+            from components.javaPlatform
+            group 'ir.irezaa.bom-test'
+            version '1.0-SNAPSHOT'
+        }
+    }
+}

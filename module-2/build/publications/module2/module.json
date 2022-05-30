@@ -1,0 +1,100 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "ir.irezaa.bom-test",
+    "module": "module-2",
+    "version": "1.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.3.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "ir.irezaa.bom-test",
+          "module": "bom",
+          "version": {
+            "requires": "1.0-SNAPSHOT"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "ir.irezaa.bom-test",
+          "module": "module1",
+          "version": {
+            "requires": "1.0-SNAPSHOT"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "module-2-1.0-SNAPSHOT.jar",
+          "url": "module-2-1.0-SNAPSHOT.jar",
+          "size": 261,
+          "sha512": "7ff580f86b59eb8932cd022ac17f08b9dad0c90231122df9b8866d44e6e991d798f2f2e6547743a03247588485e0f904ecdb92b07e5a500d2ad40700adfc4172",
+          "sha256": "6298e4026b302da4d5a507a5445d4b7bb1a5f3ce9cf4b6c288988278a2fa5bd9",
+          "sha1": "18ed092e603d9a2ac91e8104320d4b9dbae4d9ee",
+          "md5": "186f570547514d148727ab5a19ae7e85"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "ir.irezaa.bom-test",
+          "module": "bom",
+          "version": {
+            "requires": "1.0-SNAPSHOT"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "ir.irezaa.bom-test",
+          "module": "module1",
+          "version": {
+            "requires": "1.0-SNAPSHOT"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "module-2-1.0-SNAPSHOT.jar",
+          "url": "module-2-1.0-SNAPSHOT.jar",
+          "size": 261,
+          "sha512": "7ff580f86b59eb8932cd022ac17f08b9dad0c90231122df9b8866d44e6e991d798f2f2e6547743a03247588485e0f904ecdb92b07e5a500d2ad40700adfc4172",
+          "sha256": "6298e4026b302da4d5a507a5445d4b7bb1a5f3ce9cf4b6c288988278a2fa5bd9",
+          "sha1": "18ed092e603d9a2ac91e8104320d4b9dbae4d9ee",
+          "md5": "186f570547514d148727ab5a19ae7e85"
+        }
+      ]
+    }
+  ]
+}

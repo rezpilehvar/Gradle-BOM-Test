@@ -1,0 +1,94 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "ir.irezaa.bom-test",
+    "module": "module-1",
+    "version": "1.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.3.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "ir.irezaa.bom-test",
+          "module": "bom",
+          "version": {
+            "requires": "1.0-SNAPSHOT"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "com.google.code.gson",
+          "module": "gson"
+        }
+      ],
+      "files": [
+        {
+          "name": "module-1-1.0-SNAPSHOT.jar",
+          "url": "module-1-1.0-SNAPSHOT.jar",
+          "size": 261,
+          "sha512": "d0ff3e3290e14f0a1c787ec3c9ea281515f0fe84e45f65b125e66c3fae642fd873c3b0c64202143f2eae738d744f681e04590d9beb3e2ee21b981735d3eacc0a",
+          "sha256": "14c647ad79c0adf7b39e3943535182d0061d98e06b7c24b3b34be0760e51bbd0",
+          "sha1": "148f9d50b463a05a12c98f0a8316d6ebf44073bc",
+          "md5": "b8e2ffc7a3f1ca5d57a28a45cca03c55"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "ir.irezaa.bom-test",
+          "module": "bom",
+          "version": {
+            "requires": "1.0-SNAPSHOT"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "com.google.code.gson",
+          "module": "gson"
+        }
+      ],
+      "files": [
+        {
+          "name": "module-1-1.0-SNAPSHOT.jar",
+          "url": "module-1-1.0-SNAPSHOT.jar",
+          "size": 261,
+          "sha512": "d0ff3e3290e14f0a1c787ec3c9ea281515f0fe84e45f65b125e66c3fae642fd873c3b0c64202143f2eae738d744f681e04590d9beb3e2ee21b981735d3eacc0a",
+          "sha256": "14c647ad79c0adf7b39e3943535182d0061d98e06b7c24b3b34be0760e51bbd0",
+          "sha1": "148f9d50b463a05a12c98f0a8316d6ebf44073bc",
+          "md5": "b8e2ffc7a3f1ca5d57a28a45cca03c55"
+        }
+      ]
+    }
+  ]
+}
